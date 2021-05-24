@@ -13,6 +13,6 @@ $ python frameskipper.py -f {VIDEO/LOCATION} -n {N_FRAMES_TO_SKIP} -o {OUTPUT/DI
 ```
 # Example
 ```bash
-$ (env) python frameskipper.py -f movie.py -n 120 -o Desktop/
+$ (env) python frameskipper.py -f movie.mp4 -n 120 -o Desktop/
 ```
 
