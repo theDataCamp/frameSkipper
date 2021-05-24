@@ -135,3 +135,6 @@ dmypy.json
 #test video
 *.mp4
 *.avi
+
+#mac specific
+.DS_Store
