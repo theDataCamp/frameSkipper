@@ -15,13 +15,15 @@ def FrameCapture(path, skip_n_frames, outfile):
     count = 0
     pic_count = 1
     success = 1
-
+    total_frames = int(vidObj.get(cv2.CAP_PROP_FRAME_COUNT))
+    print(f"total frame {total_frames}")
     while success:
         success, image = vidObj.read()
         if count % skip_n_frames == 0:
             cv2.imwrite(f"{outfile}frame_{pic_count}.jpg", image)
             pic_count +=1
         count +=1
+    print(f"Created {pic_count} images")
 
 if __name__ == '__main__':
     args = parser.parse_args()
